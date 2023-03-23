@@ -1,0 +1,46 @@
+,Sr. No.,business_status,Address,Municipality,State,Zip,Country,addresscomp,location.lon,location.lat,Name,user_ratings_total,open_now
+1,1,OPERATIONAL,1062 Old Des Peres Rd,St. Louis,MO,63131,United States,"1062 Old Des Peres Rd,  St. Louis, MO, 63131,  United States",-90.45310,38.60127,420ID,4,NA
+2,2,OPERATIONAL,839 Meramec Station Road,Valley Park,MO,63088,United States,"839 Meramec Station Road,  Valley Park, MO, 63088,  United States",-90.49563,38.56608,3Fifteen Primo Cannabis Valley Park,160,TRUE
+3,3,OPERATIONAL,10425 Watson Rd,St. Louis,MO,63127,United States,"10425 Watson Rd,  St. Louis, MO, 63127,  United States",-90.40403,38.55610,High Profile of St. Louis Dispensary,119,TRUE
+4,4,OPERATIONAL,1266 Old Orch Ctr,Manchester,MO,63021,United States,"1266 Old Orch Ctr,  Manchester, MO, 63021,  United States",-90.49682,38.59253,N'Bliss Dispensary - Manchester,192,TRUE
+5,5,OPERATIONAL,9933 Watson Rd,St. Louis,MO,63126,United States,"9933 Watson Rd,  St. Louis, MO, 63126,  United States",-90.39526,38.55674,Proper Cannabis,76,TRUE
+6,6,OPERATIONAL,1015 Grupp Rd,Des Peres,MO,63131,United States,"1015 Grupp Rd,  Des Peres, MO, 63131,  United States",-90.44016,38.60121,MoCannTrade,4,NA
+7,7,OPERATIONAL,14173 Manchester Rd Suite M,Manchester,MO,63011,United States,"14173 Manchester Rd Suite M,  Manchester, MO, 63011,  United States",-90.49852,38.59391,Kind Goods Recreational Dispensary - Manchester,110,TRUE
+8,8,OPERATIONAL,2093 Smizer Station Rd,Valley Park,MO,63088,United States,"2093 Smizer Station Rd,  Valley Park, MO, 63088,  United States",-90.49506,38.53716,Bloc Dispensary Valley Park,270,TRUE
+9,9,OPERATIONAL,15396 Manchester Rd,Ellisville,MO,63021,United States,"15396 Manchester Rd,  Ellisville, MO, 63021,  United States",-90.56189,38.59192,N'Bliss Dispensary - Ellisville,94,TRUE
+10,10,OPERATIONAL,5501 Chippewa St,St. Louis,MO,63109,United States,"5501 Chippewa St,  St. Louis, MO, 63109,  United States",-90.28605,38.59286,3Fifteen Primo Cannabis St. Louis,221,TRUE
+11,11,OPERATIONAL,4108 Manchester Ave,St. Louis,MO,63110,United States,"4108 Manchester Ave,  St. Louis, MO, 63110,  United States",-90.25068,38.62753,Swade Dispensary The Grove (Recreational),157,TRUE
+12,12,OPERATIONAL,11062 Olive Blvd Suite A,Creve Coeur,MO,63141,United States,"11062 Olive Blvd Suite A,  Creve Coeur, MO, 63141,  United States",-90.42395,38.67332,Terrabis Medical and Recreational Marijuana Dispensary Creve Coeur,135,TRUE
+13,13,OPERATIONAL,9919 Watson Rd,St. Louis,MO,63126,United States,"9919 Watson Rd,  St. Louis, MO, 63126,  United States",-90.39413,38.55692,Elevate Holistics Medical Marijuana Doctors,56,TRUE
+14,14,OPERATIONAL,6166 Delmar Blvd,St. Louis,MO,63112,United States,"6166 Delmar Blvd,  St. Louis, MO, 63112,  United States",-90.29849,38.65516,SWADE Dispensary Delmar (Recreational),93,TRUE
+15,15,OPERATIONAL,6662 Delmar Blvd Suite A,University City,MO,63130,United States,"6662 Delmar Blvd Suite A,  University City, MO, 63130,  United States",-90.30816,38.65602,JANE Dispensary Delmar,361,TRUE
+16,16,OPERATIONAL,7555 Olive Blvd,University City,MO,63130,United States,"7555 Olive Blvd,  University City, MO, 63130,  United States",-90.33392,38.67242,Star Buds Marijuana Dispensary University City,329,TRUE
+17,17,OPERATIONAL,105 N Lindbergh Blvd,Creve Coeur,MO,63141,United States,"105 N Lindbergh Blvd,  Creve Coeur, MO, 63141,  United States",-90.40578,38.65536,HomeState Dispensary,23,TRUE
+18,18,OPERATIONAL,6497 Chippewa St,St. Louis,MO,63109,United States,"6497 Chippewa St,  St. Louis, MO, 63109,  United States",-90.30164,38.59290,Greenlight Marijuana Dispensary Chippewa,141,TRUE
+19,19,OPERATIONAL,6660 Manchester Ave,St. Louis,MO,63139,United States,"6660 Manchester Ave,  St. Louis, MO, 63139,  United States",-90.30216,38.61845,Root 66 Dogtown,116,TRUE
+20,20,OPERATIONAL,16075 Manchester Rd,Ellisville,MO,63011,United States,"16075 Manchester Rd,  Ellisville, MO, 63011,  United States",-90.59493,38.59106,SWADE Dispensary Ellisville,110,TRUE
+21,21,OPERATIONAL,9919 Watson Rd,St. Louis,MO,63126,United States,"9919 Watson Rd,  St. Louis, MO, 63126,  United States",-90.39413,38.55692,Green Health Docs - Medical Marijuana Cards,850,TRUE
+22,22,OPERATIONAL,11420 Concord Village Ave,St. Louis,MO,63123,United States,"11420 Concord Village Ave,  St. Louis, MO, 63123,  United States",-90.35492,38.52452,Organic Remedies Dispensary,124,TRUE
+23,23,OPERATIONAL,20 S Euclid Ave,St. Louis,MO,63108,United States,"20 S Euclid Ave,  St. Louis, MO, 63108,  United States",-90.26206,38.63956,Good Day Farm St. Louis,115,TRUE
+24,24,OPERATIONAL,1463a S Vandeventer Ave,St. Louis,MO,63110,United States,"1463a S Vandeventer Ave,  St. Louis, MO, 63110,  United States",-90.25414,38.62408,Luxury Leaf Marijuana Dispensary,128,TRUE
+25,25,OPERATIONAL,1026 S Brentwood Blvd,Richmond Heights,MO,63117,United States,"1026 S Brentwood Blvd,  Richmond Heights, MO, 63117,  United States",-90.34550,38.63696,Bloc Dispensary Richmond Heights,238,TRUE
+26,26,OPERATIONAL,517 S Florissant Rd,Ferguson,MO,63135,United States,"517 S Florissant Rd,  Ferguson, MO, 63135,  United States",-90.30242,38.73696,Greenlight Marijuana Dispensary Ferguson,375,TRUE
+27,27,OPERATIONAL,7312 Manchester Rd,Maplewood,MO,63143,United States,"7312 Manchester Rd,  Maplewood, MO, 63143,  United States",-90.31761,38.61306,CANVAS Inspired Living ~ A Boutique and Dispensary,93,TRUE
+28,28,OPERATIONAL,5519 S Lindbergh Blvd,St. Louis,MO,63123,United States,"5519 S Lindbergh Blvd,  St. Louis, MO, 63123,  United States",-90.35734,38.52400,Good Day Farm Lindbergh,219,TRUE
+29,29,OPERATIONAL,6662 Delmar Blvd STE A,University City,MO,63130,United States,"6662 Delmar Blvd STE A,  University City, MO, 63130,  United States",-90.30816,38.65602,Doobie Delivery,30,NA
+30,30,OPERATIONAL,6407 Michigan Ave,St. Louis,MO,63111,United States,"6407 Michigan Ave,  St. Louis, MO, 63111,  United States",-90.25146,38.55781,Sunrise Dispensary,74,TRUE
+31,31,OPERATIONAL,180 Gravois Bluffs Cir Dr B,Fenton,MO,63026,United States,"180 Gravois Bluffs Cir Dr B,  Fenton, MO, 63026,  United States",-90.44500,38.50252,Kind Goods Recreational Dispensary - Fenton,251,TRUE
+32,32,OPERATIONAL,2316 Cherokee St,St. Louis,MO,63118,United States,"2316 Cherokee St,  St. Louis, MO, 63118,  United States",-90.22492,38.59300,SWADE Dispensary Cherokee (Recreational),124,TRUE
+33,33,OPERATIONAL,3737 S Grand Blvd,St. Louis,MO,63118,United States,"3737 S Grand Blvd,  St. Louis, MO, 63118,  United States",-90.24462,38.58908,Root 66 S Grand,168,TRUE
+34,34,OPERATIONAL,14856 Clayton Rd,Chesterfield,MO,63017,United States,"14856 Clayton Rd,  Chesterfield, MO, 63017,  United States",-90.53796,38.61536,The Green Dragon CBD,210,TRUE
+35,35,OPERATIONAL,2821 N Ballas Rd,Des Peres,MO,63131,United States,"2821 N Ballas Rd,  Des Peres, MO, 63131,  United States",-90.44430,38.63189,Inner Balance Wellness LLC,0,TRUE
+36,36,OPERATIONAL,234 Kingston Dr,St. Louis,MO,63125,United States,"234 Kingston Dr,  St. Louis, MO, 63125,  United States",-90.28142,38.51802,Nature Med Dispensary - St. Louis,355,TRUE
+37,37,OPERATIONAL,11088 New Halls Ferry Road,Florissant,MO,63033,United States,"11088 New Halls Ferry Road,  Florissant, MO, 63033,  United States",-90.26915,38.77339,Cookies St. Louis,310,TRUE
+38,38,OPERATIONAL,859 Robert Raymond Dr,Lake St Louis,MO,63367,United States,"859 Robert Raymond Dr,  Lake St Louis, MO, 63367,  United States",-90.78216,38.77091,The Source Cannabis - Lake Saint Louis,131,TRUE
+39,39,OPERATIONAL,7766 N Lindbergh Blvd,Hazelwood,MO,63042,United States,"7766 N Lindbergh Blvd,  Hazelwood, MO, 63042,  United States",-90.34996,38.78674,Terrabis Medical and Recreational Marijuana Dispensary Hazelwood,232,TRUE
+40,40,OPERATIONAL,2077 St Louis Galleria St,St. Louis,MO,63117,United States,"2077 St Louis Galleria St,  St. Louis, MO, 63117,  United States",-90.34865,38.63285,CBD Kratom,1026,TRUE
+41,41,OPERATIONAL,10646 Baptist Church Rd,St. Louis,MO,63128,United States,"10646 Baptist Church Rd,  St. Louis, MO, 63128,  United States",-90.36106,38.52276,420ID | Medical Marijuana Certification,3376,TRUE
+42,42,OPERATIONAL,2317 Cherokee St,St. Louis,MO,63118,United States,"2317 Cherokee St,  St. Louis, MO, 63118,  United States",-90.22492,38.59331,Primero Cannabis Clinics,4,TRUE
+43,43,OPERATIONAL,7253 Watson Rd PMB 1445,St. Louis,MO,63119,United States,"7253 Watson Rd PMB 1445,  St. Louis, MO, 63119,  United States",-90.31999,38.58390,TeleLeaf Missouri Medical Marijuana Cards & Doctors Online Clinic,3,TRUE
+44,44,OPERATIONAL,17409 Chesterfield Airport Rd Suite B,Chesterfield,MO,63005,United States,"17409 Chesterfield Airport Rd Suite B,  Chesterfield, MO, 63005,  United States",-90.60826,38.66882,Hippos Marijuana Dispensary - Chesterfield,284,TRUE
+45,45,OPERATIONAL,3636 S Geyer Rd #100,Sappington,MO,63127,United States,"3636 S Geyer Rd #100,  Sappington, MO, 63127,  United States",-90.41539,38.55330,Missouri Medical Marijuana Clinic / Medical Marijuana Card / Cannabis Card,3,TRUE

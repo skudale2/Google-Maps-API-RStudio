@@ -1,0 +1,128 @@
+---
+title: "ODTrial"
+author: "Siddhesh R. Kudale"
+date: "2023-02-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+install.packages("googleway")
+library(tidyverse)
+library(googleway)
+library(readxl)
+library(writexl)
+```
+
+```{r}
+key   <- "key"
+queries <- paste0("smoke and vape in Des Peres, MO")
+
+# A custom loop function for google_places() 
+google_places_loop <- function(search_string, key, ntimes = 4, page_token = "") {
+ print(search_string)    
+ iter <- 0
+ obj_df <- tibble()
+ 
+  while(iter < ntimes & !is.null(page_token)) {
+    iter <- iter + 1
+    print(iter)
+    obj_response <- google_places(search_string = search_string, key = key, page_token = page_token,
+                                  language = "EN", 
+                                  )
+    obj_df_new <-   as_tibble(obj_response$results) %>% mutate(iter = iter)
+    obj_df <- bind_rows(obj_df, obj_df_new)
+    page_token <- obj_response$next_page_token
+    
+    if(is.null(page_token) == TRUE) {
+      print("No more pagination tokens")
+      Sys.sleep(2)
+    } else {
+    Sys.sleep(3) 
+    }
+  }
+  obj_df
+}
+
+# Finally, we loop through the queries by the custom function.
+places <- map_df(.x = queries, .f = google_places_loop, key = key)
+
+typeof(places)
+
+# Initialize empty vector for phone numbers
+phone_numbers <- c()
+
+# Loop over place_id values and retrieve phone numbers
+for (i in 1:nrow(places)) {
+  place_id <- places$place_id[i]
+  place_details <- google_place_details(place_id, key = key)
+  if (!is.null(place_details$result$formatted_phone_number)) {
+    phone_number <- place_details$result$formatted_phone_number
+    phone_numbers <- c(phone_numbers, phone_number)
+  } else {
+    phone_numbers <- c(phone_numbers, NA)
+  }
+}
+
+# Add phone_numbers column to data frame
+places$phone_number <- phone_numbers
+```
+
+```{r}
+library(tidyr)
+
+# Convert the nested list to a data frame
+places1 <- as.data.frame(places)
+
+# Unnest the "hobbies" column
+places1 <- unnest_wider(places1, c('geometry','photos','plus_code','opening_hours'))
+places1 <- unnest_wider(places1, c('location','viewport'))
+places1 <- unnest_wider(places1, c('southwest','northeast'), names_repair = 'minimal')
+places1 <- data.frame(places1)
+
+# convert list to data frame and drop nested columns
+library(jsonlite)
+places2 <- as.data.frame(jsonlite::flatten(places1))
+places2 <- places2 %>% select(business_status, formatted_address, lat, lng, name, place_id, rating, user_ratings_total, phone_number)
+places2 <- data.frame(places2)
+
+# Export the data frame to a CSV file
+write_csv(places2, "places.csv")
+```
+
+```{r}
+library(leaflet)
+library(htmltools)
+library(rgdal)
+
+places3 <- read_xlsx("locations.xlsx")
+placeyes <- places3 %>% 
+  filter(`Ideal Location` == "Yes")
+placeno <- places3 %>% 
+  filter(`Ideal Location` == "No")
+placeno <- placeno %>% 
+  filter(`Study Location?` != "NA")
+boundary <- st_read("DSPBdy/DSP.shp")
+boundary <- readOGR("DSPBdy/DSP.shp", GDAL1_integer64_policy = TRUE)
+
+# Create leaflet map
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(placeyes, radius = 5, color = "Green", stroke = TRUE, fillOpacity = 0.8, popup = paste(placeyes$name, "<br>", "Contact:", placeyes$phone_number, "<br>", "Avg Rating:", placesyes$rating, "<br>", "Total Ratings:", placesyes$user_ratings_total))
+
+star <- makeIcon(
+  iconUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Green_star_41-108-41.svg/1259px-Green_star_41-108-41.svg.png",
+  iconWidth = 20, iconHeight = 20,
+)
+
+leaflet() %>% addProviderTiles("CartoDB.DarkMatter") %>%
+    addMarkers(data=placeyes, icon = star, popup = paste(placeyes$name, "<br>", "Contact:", placeyes$phone_number, "<br>", "Avg Rating:", placeyes$rating, "<br>", "Total Ratings:", placeyes$user_ratings_total, "<br>", "Is Recreational:", placeyes$`Recreational?`)) %>%
+    addCircleMarkers(data=placeno, radius = 5, color = "Red", stroke = TRUE, fillOpacity = 0.8, popup = paste(placeno$name, "<br>", "Contact:", placeno$phone_number, "<br>", "Avg Rating:", placeno$rating, "<br>", "Total Ratings:", placeno$user_ratings_total, "<br>", "Is Recreational:", placeno$`Recreational?`)) %>% 
+  addPolygons(data = boundary, color = "White", weight = 2, smoothFactor = 0.5,
+    opacity = 1.0, fillOpacity = 0.2,)
+```
+
+# Reference: https://stackoverflow.com/questions/74983530/get-a-list-of-places-from-google-maps-in-r
